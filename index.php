@@ -53,7 +53,7 @@
 			$resultat = mysqli_query($conn, $consulta);
 
 			if ($resultat){ ?>
-				<form action="bbddFiltrado.php" method="post">
+				<form action="index.php" method="post">
 					<select name="id">
 						<?php while( $registre = mysqli_fetch_assoc($resultat)){ ?>
 							<option value="<?php echo $registre["Code"]; ?> "><?php echo $registre["Name"] ?></option>";
